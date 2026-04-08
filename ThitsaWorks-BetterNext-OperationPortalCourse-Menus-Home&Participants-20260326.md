@@ -26,29 +26,29 @@ DFSP name is official DFSP name as configured in the Organization Profile.
 Currency in which the DFSP participates in the scheme. Each currency maintains a separate liquidity account and NDC.
 
 ### Balance
-Balance is The current liquidity balance of the DFSP. It rRepresents the available funds in the DFSP’s liquidity account at the settlement bank, and is displayed with up to two decimal places.
+Balance is The current liquidity balance of the DFSP. It represents the available funds in the DFSP’s liquidity account at the settlement bank, and is displayed with up to two decimal places.
 
 ### Current Position
 Current position is the sum of incoming amounts (positive value) and outgoing amounts (negative value). If it is zero, it means incoming and outgoing transfers are balanced.
 
 ### NDC % and NDC
-NDC % and NDC. NDC which stands for Net Debit Card  defines the maximum net outgoing position a DFSP is permitted to reach during a settlement window. You cand configure NDC in two ways
+NDC, which stands for Net Debit Cap,  defines the maximum net outgoing position a DFSP is permitted to reach during a settlement window. You can configure NDC in two ways
 - Fixed Amount NDC
-    - When you configured the NDC as fixed for a DFSP, you can check the amount under the NDC column. Wheather you change your liquidity amount, NDC will remain as you defined if it is fixed amount.
+    - When you configure the NDC as fixed for a DFSP, you can check the amount under the NDC column.
 - Percentage-Based NDC
-    - When you configured the NDC as percentage-based for a DFSP, you can check the how percentage you defined under the NDC % column and how much the amount will be under the NDC column. If NDC type is percentage-based, NDC amount will vary based on the balance as known as liquidity amount.
+    - When you configure the NDC as percentage-based for a DFSP, you can check the percentage you defined under the NDC % column and how much the amount will be under the NDC column. If the NDC type is percentage-based, the NDC amount will vary based on the balance, also known as liquidity amount.
 
 ### NDC Used %
 It displays the ratio of the Current Position to the Net Debit Cap (NDC). It indicates how much of the DFSP’s allowed net outgoing exposure is currently being used. The value is presented with color indicators to support quick interpretation.
 
-- If it is 0% with black color, it means there is no usage or all the positions are balanced.
-- If it is 40% with blue color, it means there is net outgoing usage below 40%.
-- If it is 40% with red color, it means there is net outgoing usage at or lower 40%.
-- If it is 10% with green color, it means there is net incoming position.
+- If it is black, it means there is no usage or all the positions are balanced.
+- If it is blue, it means there is net outgoing usage below 40%.
+- If it is red, it means there is net outgoing usage at or above 40%.
+- If it is green, it means there is a net incoming position.
 
 ### Enable/ Disable
-When you logged in as a Admin-level or Manager-level, you can suspend a DFSP’s ability to send 
-and receive transfers in order to manage operational or liquidity risk because there might be
+When you log in as an Admin-level or Manager-level user, you can suspend a DFSP’s ability to send 
+and receive transfers in order to manage operational or liquidity risk, because there might be
 - Suspicious or abnormal transaction behavior
 - Liquidity risk scenarios
 - Operational issues with the settlement bank
